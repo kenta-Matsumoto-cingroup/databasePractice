@@ -44,7 +44,7 @@ SELECT * FROM countries WHERE name LIKE 'An%';
 
 -- 問12
 -- 全国の中から独立記念日が1990年より前または人口が10万人より多い国を全て抽出してください。
-SELECT * FROM countries WHERE indep_year <= 1990 OR population >= 100000;
+SELECT * FROM countries WHERE indep_year < 1990 OR population > 100000;
 
 -- 問13
 -- コードがDZAもしくはALBかつ独立記念日が1990年より前の国を全て抽出してください。
